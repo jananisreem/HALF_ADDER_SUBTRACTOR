@@ -49,38 +49,39 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
- module EXP3(
-    input  wire a, b,    
-    output wire sum,      
-    output wire carry     
-);
-
-    assign sum   = a ^ b;  
-    assign carry = a & b;   
-
-endmodule
-
-module EXP4(
-    input  wire a, b, cin,  
-    output wire sum, carry   
+HALF ADDER
+module half_adder (
+    input wire a, b,      // Inputs
+    output wire sum,       // Sum output
+    output wire carry      // Carry output
 );
 
     // Logic equations
-    assign sum   = a ^ b ^ cin;                  
-    assign carry = (a & b) | (b & cin) | (a & cin); 
+    assign sum   = a ^ b;  // XOR for sum
+    assign carry = a & b;  // AND for carry
 
 endmodule
- 
+HALF SUBTRACTER 
+module half_subtractor (
+    input  wire a, b,        // Inputs
+    output wire diff, borrow  // Outputs
+);
+
+    // Logic equations
+    assign diff   = a ^ b;    // XOR for difference
+    assign borrow = ~a & b;   // Borrow when a < b
+
+endmodule
+
 Developed by:JANANI SREE M
 RegisterNumber:25015867
 
 **RTL Schematic**
-<img width="942" height="608" alt="Screenshot 2025-12-12 191834" src="https://github.com/user-attachments/assets/27894813-7639-43e5-b281-07cfd5f8dc36" />
-<img width="997" height="590" alt="Screenshot 2025-12-12 191816" src="https://github.com/user-attachments/assets/c79e96f1-1b8c-4cc6-b8b7-390520810127" />
-
+<img width="1239" height="819" alt="Screenshot 2025-12-15 171517" src="https://github.com/user-attachments/assets/a7ac0553-4180-41e3-a33c-bfd9bbec9cf9" />
+<img width="1456" height="893" alt="Screenshot 2025-12-15 171627" src="https://github.com/user-attachments/assets/59d60016-7e13-483e-accd-60ea5fc51dde" />
 **Output/TIMING Waveform**
-<img width="1313" height="843" alt="Screenshot 2025-12-12 191857" src="https://github.com/user-attachments/assets/d67b03f7-5660-4c5a-87ff-b1cce207d914" />
-<img width="1324" height="860" alt="Screenshot 2025-12-12 191919" src="https://github.com/user-attachments/assets/1cc47ce0-c466-443e-86a1-c1285dc8e957" />
-
+<img width="1453" height="873" alt="image" src="https://github.com/user-attachments/assets/e965f77e-438d-44d7-9a28-1b4fa1e738cd" />
+<img width="1456" height="908" alt="image" src="https://github.com/user-attachments/assets/736507d8-d1ad-476b-8006-cd5ddae42b37" />
+ 
 **Result:**
 Thus, the Full Adder and Full Subtractor circuits are designed and the truth tables is verified using Quartus software.
