@@ -77,10 +77,14 @@ Developed by:JANANI SREE M
 RegisterNumber:25015867
 
 **RTL Schematic**
+HALF ADDER
 <img width="1239" height="819" alt="Screenshot 2025-12-15 171517" src="https://github.com/user-attachments/assets/a7ac0553-4180-41e3-a33c-bfd9bbec9cf9" />
+HALF SUBTRACTOR
 <img width="1456" height="893" alt="Screenshot 2025-12-15 171627" src="https://github.com/user-attachments/assets/59d60016-7e13-483e-accd-60ea5fc51dde" />
 **Output/TIMING Waveform**
+HALF ADDER
 <img width="1453" height="873" alt="image" src="https://github.com/user-attachments/assets/e965f77e-438d-44d7-9a28-1b4fa1e738cd" />
+HALF SUBTRACTOR
 <img width="1456" height="908" alt="image" src="https://github.com/user-attachments/assets/736507d8-d1ad-476b-8006-cd5ddae42b37" />
  
 **Result:**
